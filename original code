@@ -1,0 +1,44 @@
+imageMode(CENTER);
+background (154, 223, 252);
+
+image(getImage("cute/RoofSouthEast"), 335, 120,30, 60);//
+image(getImage("cute/RoofSouthWest"), 65, 120,30, 60);
+for (var m = 5; m < 16; m+=1) {
+        image(getImage("cute/RoofSouth"), m*20, 120,40, 60);
+    }
+image(getImage("cute/ShadowEast"), 100, 131,500, 65);    
+    
+image(getImage("cute/RoofSouthEast"), 305, 78,30, 60);    
+image(getImage("cute/RoofSouthWest"), 95, 78,30, 60);
+for (var m = 6.5; m < 14; m+=1) {
+        image(getImage("cute/RoofSouth"), m*20, 78,40, 60);
+    }
+    image(getImage("cute/ShadowEast"), 70, 90,500, 65);
+    
+image(getImage("cute/RoofSouthEast"), 275, 37,30, 60);    
+image(getImage("cute/RoofSouthWest"), 125, 37,30, 60);
+for (var m = 8; m < 12.5; m+=1) {
+        image(getImage("cute/RoofSouth"), m*20, 37,40, 60);
+    }   
+    image(getImage("cute/ShadowEast"), 40, 50,500, 65);
+    
+for (var j = 5.4; j < 11.5; j+=1) {
+    for (var i = 2.2; i < 11.5; i+=0.5) {
+        image(getImage("cute/StoneBlock"), i*30, j*30,30, 60);
+    }
+    for (var k = 5.4; k < 11.5; k+=1) {
+        image(getImage("cute/ShadowEast"), 101, k*30,500, 65);
+    }
+}
+image(getImage("cute/DoorTallClosed"), 200, 285,60, 150);
+image(getImage("cute/WindowTall"), 275, 200,60, 120);    
+image(getImage("cute/WindowTall"), 125, 200,60, 120);
+
+var grass = getImage("cute/GrassBlock");
+var x = 0;
+while(x<450){
+image(grass, x, 370,100,100);
+x+=100;
+} 
+
+
